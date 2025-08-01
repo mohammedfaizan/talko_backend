@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "clerk",
+    "webhooks",
+    "websockets"
+  ],
+  "license": "ISC",
+  "author": "faizan",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@clerk/express": "^1.7.11",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.16.4",
+    "multer": "^2.0.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "svix": "^1.69.0"
+  }
+}
