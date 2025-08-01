@@ -9,7 +9,7 @@ import { requireAuth } from "@clerk/express";
 const userRouter = express.Router();
 
 userRouter
-  .route("/webhook")
+  .route("/webhooks")
   .post(bodyParser.raw({ type: "application/json" }), handleClerkWebhook);
 
 userRouter.route("/getAll").get(requireAuth(), getUsersForSidebar);
